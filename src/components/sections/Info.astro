@@ -2,12 +2,11 @@
 import { basics } from '@cv';
 import Section from '@/components/Section.astro';
 import Email from '@/icons/Email.astro';
-import Phone from '@/icons/Phone.astro';
 import LinkedIn from '@/icons/Linkedin.astro';
 import GitHub from '@/icons/Github.astro';
 import WorldMap from '@/icons/WorldMap.astro'
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, email } = basics;
 const { city, country} = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -28,7 +27,6 @@ const SOCIAL_ICONS: Record<string, any> = {
       <footer class="print">
         <ul>
           <li><p>• {email}</p></li>
-          <li><p>• {phone}</p></li>
           {profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network]
             return(
@@ -49,18 +47,6 @@ const SOCIAL_ICONS: Record<string, any> = {
               rel="noopener noreferrer"
               >
               <Email />
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Llamar por teléfono a ${name} al número ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              <Phone />
             </a>
           )
         }
