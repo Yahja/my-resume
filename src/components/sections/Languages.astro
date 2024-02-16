@@ -42,4 +42,22 @@ import { languages } from "@cv";
     padding: 4px 8px;
     border-radius: 2px;
   }
+
+  html.dark .languages {
+    border: 1px solid #5234bf;
+  }
+
+  html.dark span {
+    color: #f2f2f2;
+    background: #5234bf;
+  }
+  @media print {
+    html.dark .languages {
+      border: 1px solid #f1f1f1;
+    }
+    html.dark span {
+      color: #444;
+      background-color: #f2f2f2;
+    }
+  }
 </style>

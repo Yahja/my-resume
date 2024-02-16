@@ -68,12 +68,6 @@ const profilesInfo = profiles.map(({network, url}) => {
 
 </script>
 <style>
-  @media print {
-		ninja-keys {
-			display: none !important;
-		}
-	}
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -89,7 +83,7 @@ const profilesInfo = profiles.map(({network, url}) => {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding-block: 8px;
+    padding-block: 16px;
     text-align: center;
     font-size: 0.85rem;
     view-timeline-name: --revealing;
@@ -105,4 +99,17 @@ const profilesInfo = profiles.map(({network, url}) => {
     font-size: 12px;
     font-family: "Fira Code", monospace;
   }
+  html.dark footer {
+    background: #0c0a2b;
+    border-top: 1px solid #591189;
+  }
+
+  html.dark kbd {
+    background: #341a62;
+  }
+  @media print {
+		ninja-keys {
+			display: none !important;
+		}
+	}
 </style>
