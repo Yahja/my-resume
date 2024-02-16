@@ -10,9 +10,12 @@ import Languages from '@/components/sections/Languages.astro';
 import Skills from '@/components/sections/Skills.astro';
 import KeyboardManager from '@/components/KeyboardManager.astro'
 
+import {basics} from '@cv'
+const {name, role} = basics;
+
 ---
 
-<Layout title="Yahair Sotomayor Frías | Front end Developer">
+<Layout title=`${name} | ${role}`>
 	<main>
 		<Info/>
 		<About/>
