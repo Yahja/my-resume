@@ -1,0 +1,230 @@
+{
+  "basics": {
+    "name": "Yahair Sotomayor Frías",
+    "label": "Front End developer con más de 10 años de experiencia",
+    "image": "https://yahsot.dreamhosters.com/images/IMG_3406.jpg",
+    "email": "yahair.sotomayor@gmail.com",
+    "phone": "+39 351 77 393 77",
+    "url": "https://johndoe.com",
+    "summary": "+10 años de experiencia como Desarrollador Web. He colaborado en equipos de desarrollo para agencias de consultorias en transformación digital y en compañias multinacionales, aportando soluciones desde la visión del desarrollo front end. Desde el año 2021 vivo en Milán, Italia",
+    "location": {
+      "address": "Via Rembrandt 22",
+      "postalCode": "20148",
+      "city": "Milán",
+      "country": "Italia",
+      "countryCode": "IT",
+      "region": "Lombardía"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "yahairsotomayor",
+        "url": "https://www.linkedin.com/in/yahairsotomayor"
+      },
+      {
+        "network": "GitHub",
+        "username": "Yahja",
+        "url": "https://github.com/Yahja"
+      }
+    ]
+  },
+  "work": [{
+    "name": "Acid Labs",
+    "location": "Uruguay",
+    "position": "Ingeniero de Software",
+    "url": "https://acidlabs.com",
+    "startDate": "2022/02/01",
+    "endDate": "2023/07/31",
+    "summary": ["Llego a Acid Labs para continuar trabajando con el equipo de desarrollo en CENCOSUD. Con 5 años de experiencia junto al equipo, conozco la arquitectura del e-commerce https://www.paris.cl y las funcionalidades de Salesforce Commerce Cloud.", 
+    "El stack tecnológico es: e-commerce con Salesforce, HTML5 e ISML para el markup, task runners con Webpack, preprocesadores de CSS Sass, JavaScript y Angular v9.",
+    "Continué trabajando en iniciativas de mejoras en la interfaz de usuario en todo el e-commerce, desde el menú de navegación, luego por la PLP (product list page), PDP (product detail page), Cart y Checkout.",
+    "Siguiendo las directrices del Design Systema hecho en Figma por el equipo de UX/UI.","Para los métodos de despacho en la sección del Checkout desarrollé componentes en Angular v9 mediante HTML, Sass y Typescript."]
+    },
+    {
+      "name": "CENCOSUD",
+      "location": "Cile",
+      "position": "Ingeniero de Software",
+      "url": "https://www.cencosud.com/en",
+      "startDate": "2019/08/01/",
+      "endDate": "2022/01/31",
+      "summary": ["A CENCOSUD llegué en el año 2017 como consultor Frontend Developer a través de la agencia digital BBK+2Brains. La misión fué trabajar en la plataforma de e-commerce del producto de retail Paris haciendo cambios en la interfaz de usuario para mejorar la experiencia del cliente. Al comienzo implementé esos cambios con HTML, CSS, JavaScript y jQuery en una plataforma legacy de IBM.", "El siguiente proyecto consistió en implementar la solución CRM Salesforce, en esta etapa se formó un equipo de desarrollo más completo con distintos perfiles y junto a Accenture Bulgaria logramos implementar un nuevo e-commerce con Salesforce Commerce Cloud, en esta etapa trabajamos con metodologías Agile Scrum e implementamos entornos de desarrollo con Webpack taskrunner, preprocesadores de CSS Sass, librerías de CSS y Javascript con Bootstrap y Continuous Deployment/Continuous Integration (CD/CI) y control de versiones en Gitlab.", "Luego de dos años como consultor externo y con Salesforce implementado, CENCOSUD me ofrece un contrato a tiempo indeterminado.", "Con un equipo de desarrollo cada vez más grande, continuamos trabajando en mejoras en la interfaz de usuario, logramos implementar Angular (v9) junto con Salesforce en el Checkout del e-commerce. Ya en pandemia me traslado a Milano y continúo trabajando con CENCOSUD en formato Smart Working hasta Enero del 2022."]
+    },
+    {
+      "name": "2Brains",
+      "location": "Cile",
+      "position":"Frontend Developer",
+      "url": "https://www.2brains.lat/",
+      "startDate": "2016/11/01/",
+      "endDate": "2019/07/31",
+      "summary": ["En BBK+2Brains comprendí el desarrollo de aplicaciones web como lo es hasta hoy. Aquí comencé a trabajar con preprocesadores de CSS Sass, tuve la oportunidad de ser parte de proyectos para el sector de la banca y entender cómo funciona Angular, instalar las dependencias con NPM (node package manager) utilizar esas dependencias junto al framework, trabajar con metodologías Agile Scrum, y ser parte de equipos de desarrollo con distintos perfiles (Backend, Fullstack, UX/UI Designers) utilizar más JavaScript y menos jQuery, entender conceptos de desarrollo como PWA (Progressive Web Apps), SPA (Single Page Application), DevOps, CI/CD, control de versiones con Git, etc."]
+    }
+  ],
+  "certificates": [{
+      "name": "React - Hooks, Router, Redux e Next",
+      "date": "2023-10-10",
+      "issuer": "Udemy",
+      "url": "https://certificate.com",
+      "summary": "En este curso impartido por Udemy, explican de forma didactiva como funciona la libreria React y sus principales instrumentos, como los Hooks, Router, Styled Components, etc. El manejo de estados de componentes a través de Redux y pruebas unitarias con Jest."
+    },
+    {
+      "name": "Typescript",
+      "date": "2022-04-30",
+      "issuer": "Udemy",
+      "url": "https://certificate.com",
+      "summary": "En este curso explican como utilizar Typescript en proyectos de desarrollo y ofrece una sólida base para comenzar a trabajar con frameworks como Angular y/o React."
+    },
+    {
+      "name": "Javascript ES5",
+      "date": "2022-10-19",
+      "issuer": "Udemy",
+      "url": "https://certificate.com",
+      "summary": "Con este curso mejoré mis habilidades en Javascript y me hicieron comprender de mejor manera un lenguage con el que estaba trabajando."
+    },
+    {
+      "name": "Diploma en Responsive Design HTML5 - CSS3",
+      "date": "2012-04-30",
+      "issuer": "Academia Crossmedia - Santiago de Chile",
+      "url": "https://certificate.com",
+      "summary": "Curso presencial de dos meses para aprender a desarrollar interfaz de usuario responsive con HTML5 y CSS3."
+    }],
+  "education": [{
+    "institution": "Universidad del Mar",
+    "url": "https://institution.com/",
+    "area": "Diseño Gráfico",
+    "studyType": "Técnico",
+    "startDate": "2004-03-01",
+    "endDate": "2006-01-12",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Idioma nativo",
+      "flag": "spain"
+    },
+    {
+      "language": "Italiano",
+      "fluency": "Nivel B2",
+      "flag": "italy"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Nivel A2",
+      "flag": "united-states"
+    }
+  ],
+  "skills": [
+      {
+      "name": "HTML5",
+      "level": "Master",
+      "keywords": [
+        "Frontend",
+        "Desarrollo Web",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "CSS3",
+      "level": "Master",
+      "keywords": [
+        "UI",
+        "Interfaz",
+        "Diseño responsive"
+      ]
+    },
+    {
+      "name": "Sass",
+      "level": "Master",
+      "keywords": [
+        "CSS",
+        "Preprocesadores",
+        "Diseño responsive"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Master",
+      "keywords": [
+        "CSS",
+        "Framework",
+        "Diseño responsive"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "level": "Middle",
+      "keywords": [
+        "Javascript",
+        "Libreries"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Middle",
+      "keywords": [
+        "UI",
+        "Interfaz"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Middle",
+      "keywords": [
+        "Frontend framework",
+        "Interfaz de usuario",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Middle",
+      "keywords": [
+        "Control de versiones",
+        "Interfaz",
+        "BEM"
+      ]
+    },
+    {
+      "name": "Styled Components",
+      "level": "Middle",
+      "keywords": [
+        "UI",
+        "Interfaz",
+        "React"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Junior",
+      "keywords": [
+        "UI",
+        "Interfaz",
+        "React"
+      ]
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/"
+  }]
+}

@@ -1,0 +1,172 @@
+---
+import { basics } from '@cv';
+import Section from '@/components/Section.astro';
+import Email from '@/icons/Email.astro';
+import Phone from '@/icons/Phone.astro';
+import LinkedIn from '@/icons/Linkedin.astro';
+import GitHub from '@/icons/Github.astro';
+import WorldMap from '@/icons/WorldMap.astro'
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, country} = location;
+
+const SOCIAL_ICONS: Record<string, any> = {
+  LinkedIn, 
+  GitHub
+}
+---
+
+<Section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <p>{label}</p>
+      <span>
+        <WorldMap />
+        {city}, {country}
+      </span>
+      <footer class="print">
+        <ul>
+          <li><p>• {email}</p></li>
+          <li><p>• {phone}</p></li>
+          {profiles.map(({ network, url }) => {
+            const Icon = SOCIAL_ICONS[network]
+            return(
+              <li>
+                <p>• {url}</p>
+              </li>
+            )
+          })}
+        </ul>
+      </footer>
+      <footer class="no-print">        
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Enviar un correo electronico a ${name} a la dirección ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <Email />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network]
+            return(
+              <a
+                href={url}
+                title={`Visitar el perfil de ${name} en ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            )
+          })
+        }
+        
+      </footer>
+    </div>
+    <figure>
+      <img src={image} alt={name} />
+    </figure>
+  </div>
+</Section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 32px;
+  }
+  /* h2 {
+    color: #444;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-wrap: balance;
+  } */
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 150px;
+    border-radius: 6px;
+  }
+  span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: -0.05rem;
+  }
+  svg {
+    width: 12px;
+    height: 12px;
+    transform: scale(0.5);
+  }
+  footer {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+  footer a {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    transition: all .3s ease;
+  }
+  footer a:hover {
+    background-color: #eee;
+  }
+  footer a svg {
+    width: 1rem;
+    height: 1rem;
+    transform: scale(0.75);
+  }
+  footer.print {
+    margin-top: 0px;
+  }
+  footer.print ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  footer.print ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  footer.print ul li p {
+    font-size: 0.75rem;
+    color: #666;
+  }
+</style>

@@ -1,0 +1,53 @@
+---
+import Section from "../Section.astro"
+
+import {certificates} from '@cv'
+---
+
+<Section title="Cursos y certificaciones">
+  <ul>
+    {certificates.map(({ name, date, issuer, summary } ) => {
+      const year = new Date(date).getFullYear();
+      return(
+      <li>
+        <article>
+          <header>
+            <h3>{name}</h3>
+            <span>{year}</span>
+          </header>
+          <h4>{issuer}</h4>
+          <p>
+            {summary}
+          </p>
+        </article>
+      </li>
+      )
+    })}
+  </ul>
+  
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  span {
+    font-size: 0.85rem;
+    color: #444;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    margin-bottom: 0.75rem;
+  }
+</style>

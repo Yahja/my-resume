@@ -1,0 +1,78 @@
+---
+import Section from "../Section.astro"
+
+import {work} from '@cv'
+---
+
+<Section title="Experiencia Laboral">
+  <ul>
+    {work.map(({name, location, startDate, endDate, position, summary, url}) => { 
+      const startYear = new Date(startDate).getFullYear();
+      const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual";
+      const years = `${startYear} - ${endYear}`;
+
+      return (
+        <li>
+          <article>
+            <header>
+              <div class="name-location">
+                <h3><a href={url} target="_blank" >↗ {name}</a></h3>
+                <span>{location}</span>
+              </div>
+              <div class="date">
+                <span>{years}</span> 
+              </div>
+            </header>
+            <h4>{position}</h4>
+            <p>{summary}</p>
+          </article>
+        </li>
+      )})}
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .date {
+    font-size: 0.85rem;
+    color: #444;
+  }
+  .name-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .name-location span {
+    background-color: #eee;
+    border-radius: 4px;
+    margin-left: 4px;
+    font-size: 0.75rem;
+    line-height: 2;
+    font-weight: 700;
+    padding: 0px 8px;
+  }
+  h3 a{
+    color: #111;
+    /* transition: all 0.4s ease-in-out; */
+  }
+  h3 a:hover {
+    color: lightseagreen;
+    text-decoration: underline;
+  }
+  h4 {
+    color: #222;
+    margin-bottom: 0.75rem;
+    font-family: Menlo, Monaco, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Courier New', Courier, monospace;
+    font-weight: 500;
+  }
+</style>
